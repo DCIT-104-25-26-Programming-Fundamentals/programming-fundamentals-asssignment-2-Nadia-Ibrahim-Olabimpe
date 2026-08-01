@@ -42,3 +42,60 @@
 #include <iostream>
 using namespace std;
 
+int total(int number){
+    for (i=0; i<number.length; i++){
+        total= total + number[i];
+        return total;
+    }
+    return 0;
+}
+
+float mean(int number){
+    total= total (int number);
+    mean= total/ number;
+    return mean;
+    return 0;
+}
+
+int maximum(int number){
+    maximum=[0]
+    for (i=0; i<number; i++){
+        if (maximum< number[i]){
+            maximum= number[i];
+            return maximum;
+        }
+    }
+    return 0;
+}
+
+int minimum(int number){
+    minimum=[0]
+    for (i=0; i<number; i++){
+        if (minimum< number[i]){
+            minimum= number[i];
+            return minimum;
+        }
+    }
+    return 0;
+}
+
+int main(){
+    number= []
+    cout << "How many numbers?: "<< endl;
+    cin<< num_of_numbers<< endl;
+
+    for (i=0; i<num_of numbers+1; i++){
+        cout<< "Enter number "+[i] + ":" "<<endl;
+        cin<< number<<endl;
+        number.append(num_of_numbers);
+    }
+    if (number<=0){
+        cout<< "Error: Number must be a positive integer!"<<endl;
+    }
+    else{
+        total(int)(int number)= Results
+        cout<< Results<<endl;
+    }
+
+    return 0;
+}
