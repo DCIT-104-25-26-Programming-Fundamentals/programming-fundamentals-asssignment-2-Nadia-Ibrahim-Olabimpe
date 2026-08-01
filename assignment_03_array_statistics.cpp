@@ -42,60 +42,84 @@
 #include <iostream>
 using namespace std;
 
-int total(int number){
-    for (i=0; i<number.length; i++){
-        total= total + number[i];
-        return total;
+int total(int numbers[], int size)
+{
+    int sum = 0;
+
+    for (int i = 0; i < size; i++)
+    {
+        sum += numbers[i];
     }
-    return 0;
+
+    return sum;
 }
 
-float mean(int number){
-    total= total (int number);
-    mean= total/ number;
-    return mean;
-    return 0;
+float mean(int numbers[], int size)
+{
+    int sum = total(numbers, size);
+
+    return (float)sum / size;
 }
 
-int maximum(int number){
-    maximum=[0]
-    for (i=0; i<number; i++){
-        if (maximum< number[i]){
-            maximum= number[i];
-            return maximum;
+int maximum(int numbers[], int size)
+{
+    int max = numbers[0];
+
+    for (int i = 1; i < size; i++)
+    {
+        if (numbers[i] > max)
+        {
+            max = numbers[i];
         }
     }
-    return 0;
+
+    return max;
 }
 
-int minimum(int number){
-    minimum=[0]
-    for (i=0; i<number; i++){
-        if (minimum< number[i]){
-            minimum= number[i];
-            return minimum;
+int minimum(int numbers[], int size)
+{
+    int min = numbers[0];
+
+    for (int i = 1; i < size; i++)
+    {
+        if (numbers[i] < min)
+        {
+            min = numbers[i];
         }
     }
-    return 0;
+
+    return min;
 }
 
-int main(){
-    number= []
-    cout << "How many numbers?: "<< endl;
-    cin<< num_of_numbers<< endl;
+int main()
+{
+    int size;
 
-    for (i=0; i<num_of numbers+1; i++){
-        cout<< "Enter number "+[i] + ":" "<<endl;
-        cin<< number<<endl;
-        number.append(num_of_numbers);
+    cout << "How many numbers? ";
+    cin >> size;
+
+    
+    if (size <= 0)
+    {
+        cout << "Error: Number of values must be a positive integer." << endl;
+        return 0;
     }
-    if (number<=0){
-        cout<< "Error: Number must be a positive integer!"<<endl;
+
+    int numbers[100];
+
+
+    for (int i = 0; i < size; i++)
+    {
+        cout << "Enter number " << i + 1 << ": ";
+        cin >> numbers[i];
     }
-    else{
-        total(int)(int number)= Results
-        cout<< Results<<endl;
-    }
+
+
+    cout << "\nResults:" << endl;
+    cout << "Sum: " << total(numbers, size) << endl;
+    cout << "Average: " << mean(numbers, size) << endl;
+    cout << "Maximum: " << maximum(numbers, size) << endl;
+    cout << "Minimum: " << minimum(numbers, size) << endl;
 
     return 0;
 }
