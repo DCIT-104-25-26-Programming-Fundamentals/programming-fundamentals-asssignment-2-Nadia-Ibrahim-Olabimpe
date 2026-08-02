@@ -65,9 +65,6 @@
 #include <string>
 using namespace std;
 
-#include <iostream>
-#include <iomanip>
-using namespace std;
 
 // Function to display a matrix
 void displayMatrix(int matrix[10][10], int rows, int cols)
@@ -95,7 +92,7 @@ void transposeMatrix(int matrix[10][10], int rows, int cols)
         }
     }
 
-    cout << "\nTransposed Matrix:\n";
+    cout << " Transposed Matrix: ";
     displayMatrix(transpose, cols, rows);
 }
 
@@ -112,7 +109,7 @@ void addMatrices(int A[10][10], int B[10][10], int rows, int cols)
         }
     }
 
-    cout << "\nSum of the Matrices:\n";
+    cout << " Sum of Matrices: ";
     displayMatrix(sum, rows, cols);
 }
 
@@ -142,7 +139,7 @@ void multiplyMatrices(int A[10][10], int B[10][10], int rowsA, int colsA, int co
         }
     }
 
-    cout << "\nProduct of the Matrices:\n";
+    cout << " Product of the Matrices: ";
     displayMatrix(product, rowsA, colsB);
 }
 
@@ -205,7 +202,7 @@ int main()
 
 
     
-    cout << " PART C - Matrix Multiplication\n";
+    cout << " PART C - Matrix Multiplication ";
 
     int rowsA, colsA, rowsB, colsB;
 
@@ -227,7 +224,7 @@ int main()
         return 0;
     }
 
-    cout << "Enter elements of Matrix A:\n";
+    cout << "Enter elements of Matrix A: ";
 
     for (int i = 0; i < rowsA; i++)
     {
@@ -238,7 +235,7 @@ int main()
         }
     }
 
-    cout << "Enter elements of Matrix B:\n";
+    cout << "Enter elements of Matrix B: ";
 
     for (int i = 0; i < rowsB; i++)
     {

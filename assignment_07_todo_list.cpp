@@ -80,11 +80,6 @@
 #include <string>
 using namespace std;
 
-#include <iostream>
-#include <vector>
-#include <string>
-#include <limits>
-using namespace std;
 
 // Function to add a task
 void addTask(vector<string>& tasks)
