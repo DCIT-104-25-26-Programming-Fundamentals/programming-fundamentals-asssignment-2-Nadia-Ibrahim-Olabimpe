@@ -57,3 +57,24 @@
 #include <iostream>
 using namespace std;
 
+int multi_table(int number){
+    for (i=0; i<13; i++){
+        cout<< number << " x "<< i << " = "<< number*i
+    }
+}
+
+int main(){
+    cout<< "Enter a Number: "<< endl;
+    cin>> number;
+
+    if (number<=0){
+        cout<< "Error: Number must be a positive number"<< endl;
+    else{
+        cout<< multi_table(number) <<endl;
+    }
+    }
+    return 0;
+}
+
+
+
