@@ -115,7 +115,7 @@ int main()
     }
 
 
-    cout << "\nResults:" << endl;
+    cout << "Results:" << endl;
     cout << "Sum: " << total(numbers, size) << endl;
     cout << "Average: " << mean(numbers, size) << endl;
     cout << "Maximum: " << maximum(numbers, size) << endl;
